@@ -25,12 +25,10 @@ public class App
         // Prototype
 
         Alien obj = (Alien) context.getBean("alien1");
-        obj.age = 21;
-        System.out.println(obj.age);
-        //obj.code();
-        Alien obj1 = (Alien) context.getBean("alien1");
-        System.out.println(obj1.age);
-        //obj1.code();
+        //obj.setAge(21);
+        System.out.println(obj.getAge());
+
+
 
     }
 }
