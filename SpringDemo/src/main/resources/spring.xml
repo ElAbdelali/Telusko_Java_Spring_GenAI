@@ -5,11 +5,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="alien1" class="com.abdelali.Alien">
-        <property name="age" value="21">
-
-        </property>
+        <property name="age" value="21"></property>
+        <property name="laptop" ref="laptop"></property>
     </bean>
-<!--    <bean id="laptop" class="com.abdelali.Laptop">
-
-    </bean>-->
+    <bean id="laptop" class="com.abdelali.Laptop"></bean>
 </beans>

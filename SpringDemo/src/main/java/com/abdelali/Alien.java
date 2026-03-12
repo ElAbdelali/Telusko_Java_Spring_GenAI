@@ -2,8 +2,16 @@ package com.abdelali;
 
 
 public class Alien {
-
+    private Laptop laptop;
     private int age;
+
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
 
     public Alien() {
         System.out.println("Object created");
@@ -20,5 +28,6 @@ public class Alien {
 
     public void code(){
         System.out.println("Coding");
+        laptop.compile();
     }
 }
