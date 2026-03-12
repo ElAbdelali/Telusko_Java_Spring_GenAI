@@ -16,7 +16,7 @@ public class Alien {
     }
 
     public Alien() {
-        System.out.println("Object created");
+        //System.out.println("Object created");
     }
 
     public int getAge() {

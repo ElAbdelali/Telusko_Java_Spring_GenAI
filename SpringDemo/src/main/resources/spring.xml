@@ -4,7 +4,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="alien1" class="com.abdelali.Alien" autowire="byType">
+    <bean id="alien1" class="com.abdelali.Alien" autowire="byType" lazy-init="true">
 
 <!--        <constructor-arg index="1" ref="desktop"/>-->
 <!--        <constructor-arg index="0" value="21" />-->
@@ -16,11 +16,12 @@
 <!--        <constructor-arg type="com.abdelali.Laptop" ref="laptop"/>-->
 
         <property name="age" value="22"/>
+        <property name="com" ref="com"/>
 
 
 <!--        <property name="laptop" ref="laptop"/>-->
     </bean>
     <bean id="com" class="com.abdelali.Desktop" primary="true"/>
-    <bean id="com2" class="com.abdelali.Laptop"/>
+    <bean class="com.abdelali.Laptop" lazy-init="true"/>
 
 </beans>

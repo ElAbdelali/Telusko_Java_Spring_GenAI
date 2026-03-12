@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="55d89c76-6582-4db4-ae73-32ce04829241" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abdelali/Alien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/abdelali/Alien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abdelali/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/abdelali/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abdelali/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/abdelali/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abdelali/Desktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/abdelali/Desktop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773281031728</updated>
-      <workItem from="1773281032767" duration="9252000" />
+      <workItem from="1773281032767" duration="13745000" />
     </task>
     <servers />
   </component>

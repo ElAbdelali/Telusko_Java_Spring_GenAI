@@ -24,10 +24,13 @@ public class App
         // Singleton
         // Prototype
 
-        Alien obj = (Alien) context.getBean("alien1");
+        Alien obj = context.getBean("alien1", Alien.class);
+        Desktop obj1 = context.getBean("com", Desktop.class);
+
         //obj.setAge(21);
-        obj.code();
-        System.out.println(obj.getAge());
+        //obj.code();
+        //System.out.println(obj.getAge());
+
 
 
 
