@@ -6,7 +6,7 @@
 
     <bean id="alien1" class="com.abdelali.Alien">
 
-        <constructor-arg index="1" ref="laptop"/>
+        <constructor-arg index="1" ref="desktop"/>
         <constructor-arg index="0" value="21" />
 
 <!--        <constructor-arg name="age" value="21"/>-->
@@ -18,5 +18,5 @@
 
 <!--        <property name="laptop" ref="laptop"/>-->
     </bean>
-    <bean id="laptop" class="com.abdelali.Laptop"/>
+    <bean id="desktop" class="com.abdelali.Desktop"/>
 </beans>

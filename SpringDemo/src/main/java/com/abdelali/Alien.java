@@ -4,15 +4,15 @@ package com.abdelali;
 import java.beans.ConstructorProperties;
 
 public class Alien {
-    private Laptop laptop;
+    private Computer com;
     private int age;
 
-    public Laptop getLaptop() {
-        return laptop;
+    public Computer getCom() {
+        return com;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setCom(Computer com) {
+        this.com = com;
     }
 
     public Alien() {
@@ -30,12 +30,12 @@ public class Alien {
 
     public void code(){
         System.out.println("Coding");
-        laptop.compile();
+        com.compile();
     }
     @ConstructorProperties({"age","laptop"})
-    public Alien(int age, Laptop laptop){
+    public Alien(int age, Computer com){
         //System.out.println("Para Constructor called");
         this.age = age;
-        this.laptop = laptop;
+        this.com = com;
     }
 }
