@@ -1,6 +1,8 @@
 package com.abdelali;
 
 
+import java.beans.ConstructorProperties;
+
 public class Alien {
     private Laptop laptop;
     private int age;
@@ -29,5 +31,11 @@ public class Alien {
     public void code(){
         System.out.println("Coding");
         laptop.compile();
+    }
+    @ConstructorProperties({"age","laptop"})
+    public Alien(int age, Laptop laptop){
+        //System.out.println("Para Constructor called");
+        this.age = age;
+        this.laptop = laptop;
     }
 }

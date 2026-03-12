@@ -5,8 +5,18 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="alien1" class="com.abdelali.Alien">
-        <property name="age" value="21"></property>
-        <property name="laptop" ref="laptop"></property>
+
+        <constructor-arg index="1" ref="laptop"/>
+        <constructor-arg index="0" value="21" />
+
+<!--        <constructor-arg name="age" value="21"/>-->
+<!--        <constructor-arg name="laptop" ref="laptop"/>-->
+
+<!--        <constructor-arg type="int" value="21"/>-->
+<!--        <constructor-arg type="com.abdelali.Laptop" ref="laptop"/>-->
+
+
+<!--        <property name="laptop" ref="laptop"/>-->
     </bean>
-    <bean id="laptop" class="com.abdelali.Laptop"></bean>
+    <bean id="laptop" class="com.abdelali.Laptop"/>
 </beans>
