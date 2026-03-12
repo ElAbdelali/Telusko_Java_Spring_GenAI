@@ -17,10 +17,20 @@ public class App
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
         // What happens below?
+        // Both objs created have the same age even though only one object's age is initialized
+        // Because the spring.xml has only one dependency, alien1
+
+        // This is due to scope:
+        // Singleton
+        // Prototype
+
         Alien obj = (Alien) context.getBean("alien1");
-        obj.code();
+        obj.age = 21;
+        System.out.println(obj.age);
+        //obj.code();
         Alien obj1 = (Alien) context.getBean("alien1");
-        obj1.code();
+        System.out.println(obj1.age);
+        //obj1.code();
 
     }
 }
